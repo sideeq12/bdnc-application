@@ -1,0 +1,16 @@
+
+
+.test{
+    z-index: -1;
+    height: 100vh;
+    width : 100vw;
+    background-color: black;
+}
+.imageCover{
+    background-image: url("https://cdn.britannica.com/88/158788-050-314EBC88/Mount-Triumph-height-North-Cascades-National-Park.jpg?w=690&h=388&c=crop");
+    background-size: cover;
+    z-index: -2;
+    height: 100vh;
+    width : 100vw;
+    opacity: 0.1;
+}
