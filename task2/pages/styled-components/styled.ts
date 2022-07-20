@@ -18,6 +18,14 @@ export const FormData = styled.div`
     flex-direction: column;
     font-family: Lato;
     font-size: 16px;
+  /* .dateside{
+      display: flex;
+      .datePicker{
+      border : none;
+      width: 300px;
+      display: none;
+    }
+  } */
     label {
         font-style: italic;
         font-weight: 400;
@@ -45,7 +53,7 @@ export const FormData = styled.div`
 export const ListData = styled.div`
     display: flex;
     justify-content: space-between;
-    div:first-child{
+    /* div:first-child{
         width : 40%;
-    }
+    } */
     `

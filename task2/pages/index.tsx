@@ -5,11 +5,11 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { Form , FormData, ListData} from './styled-components/styled'
 import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import "react-datepicker/dist/react-datepicker.css"
 
 
 const Home: NextPage = () => {
-  const [startDate, setDate] = useState(new Date())
+  const [startDate, setDate] = useState(null)
   const today = new Date()
 
   const selectDateHandler = (d: any) => {
@@ -28,10 +28,11 @@ const Home: NextPage = () => {
     <FormData>
       <label htmlFor="school">Date of birth</label>
       <DatePicker
-        dateFormat="yyyy/MM/dd"
+        dateFormat="MMMM dd, yyyy"
         selected={startDate}
         onChange={selectDateHandler} 
         minDate={today}
+        wrapperClassName="datePicker"
         todayButton={"Today"}/>
  
     </FormData>
