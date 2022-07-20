@@ -28,3 +28,6 @@ server_echo.forEach(
     element => console.log(element)
 )
 
+
+"Json object being stringified two times, it has already be serialied to string when it was decalared"
+ "and was stringified again in line 15"
